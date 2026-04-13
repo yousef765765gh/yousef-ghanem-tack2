@@ -1,0 +1,47 @@
+.sectypefooter{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .firstaboutsecfooter {
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #000;
+    padding: 45px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text-group{
+        display: flex;
+        p{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            padding: 0 16px;
+            border-right: 1px solid #000;
+            color: #333333;
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+    .image-group{
+        display: flex;
+        gap: 14px;
+        
+        .logosotialmidia{
+            border-radius: 8px;
+            padding: 16px;
+            background-color: #FFDECC;
+            border: 2px solid #262626;
+        }
+    }
+}
+.dec-end{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #656567;
+
+}
+}

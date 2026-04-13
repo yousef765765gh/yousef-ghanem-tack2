@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #FFF5F0;
+  font-family: Outfit;
+}
+section {
+  padding: 200px 162px;
+}
+@media screen and (max-width: 1440px) {
+  section {
+    padding: 150px 80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  section {
+    padding: 80px 16px;
+  }
+}

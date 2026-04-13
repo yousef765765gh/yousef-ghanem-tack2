@@ -1,0 +1,22 @@
+.sec-about-first{
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    .footer-column{
+        list-style: none;
+        .title{
+            padding-bottom: 24px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 150%;
+            color: #262626;
+        }
+        .itemfooter{
+            padding-bottom: 14px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            color: #333333;
+        }
+    }
+}
