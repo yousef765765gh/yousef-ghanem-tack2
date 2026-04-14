@@ -25,3 +25,35 @@
         }
     }
 }
+@media screen and (max-width: 1440px) {
+    .first-about-firstfooter{
+    .logofooter{
+        padding-bottom: 16px;
+    }
+    .desfirstfooter{
+        font-size: 16px;
+    }
+    .contact-information{
+        padding-top: 40px;
+    }
+}
+}
+@media screen and (max-width: 992px) {
+    .first-about-firstfooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        .logofooter{
+        max-width: 200px;
+    }
+    .contact-information{
+        padding-top: 24px;
+        .contact-item{
+            .iconcotact{
+                padding: 6px;
+            }
+        }
+    }
+}
+}

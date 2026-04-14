@@ -20,3 +20,23 @@
         }
     }
 }
+@media screen and (max-width: 1440px) {
+    .sec-about-first{
+    .footer-column{
+        .title{
+            padding-bottom: 24px;
+        }
+    }
+}
+}
+@media screen and (max-width: 992px) {
+    .sec-about-first{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    .footer-column{
+        .title{
+            padding-bottom: 20px;
+        }
+    }
+}
+}

@@ -12,7 +12,7 @@
 }
 
 .faq-card{
-    height: 108px;
+    /* height: 108px; */
     display: flex;
     flex-direction: column ;
     padding: 40px;
@@ -55,7 +55,32 @@
         background-color: #FFF5F0;
         border: 2px solid #262626;
     }
-    .answer_mobile{
-        display: none;
+}
+@media screen and (max-width: 1440px) {
+    .faq-card{
+        padding: 30px;
+
+    }
+    .l-icon{
+        height: 32px;
+        width: 32px;
     }
 }
+@media screen and (max-width: 992px) {
+    .section_faq{
+        flex-direction: column;
+    }
+    .faq-column{
+        gap: 20px;
+    }
+    .faq-card{
+    .question-answer-card{
+
+        .answer{
+            width: 100%;
+        }
+        }
+    }
+
+}
+

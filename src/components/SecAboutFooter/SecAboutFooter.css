@@ -45,3 +45,26 @@
 
 }
 }
+@media screen and (max-width: 1440px) {
+    .sectypefooter{
+    .firstaboutsecfooter {
+    padding: 16px 0;
+    flex-direction: column;
+    gap: 20px;
+    .text-group{
+        p{
+            font-size: 14px;
+        }
+    }
+    .image-group{
+        .logosotialmidia{
+            padding: 12px;
+        }
+    }
+    }
+    .dec-end{
+    font-size: 14px;
+    text-align: center;
+    }
+}
+}
