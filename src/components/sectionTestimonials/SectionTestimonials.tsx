@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import testimonials from "../../Data/sectionTestimoniats.json";
 import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
 import "./SectionTestimonials.css";
+import HeaderSection from "../headerSection/headerSection";
 
 const SectionTestimonials = () => {
   const [index, setIndex] = useState(0);
@@ -36,6 +37,11 @@ const SectionTestimonials = () => {
 
     return (
         <section>
+            <HeaderSection
+                subTitleSec="Their Happy Words 🤗"
+                titleSec="Our Testimonials"
+                sectionDec="Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally."
+            />
         <div className="slider_container">
             <button onClick={prev} className="nav-btn"><FaArrowLeft /></button>
 

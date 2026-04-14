@@ -1,0 +1,15 @@
+.container-header-nav{
+    border:1px solid #333;
+    border-radius: 8px;
+    height:48px;
+    margin: 16px 50px;
+    background-image: url('/assets/img/headerNav.png');
+    background-position: center center ;
+    height:58px;   
+    background-size: cover;
+}
+@media screen and (max-width: 992px) {
+    .container-header-nav{
+    margin: 40px 16px;
+    }
+}

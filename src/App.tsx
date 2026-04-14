@@ -9,6 +9,7 @@ import Admissions from './pages/Admissions'
 import Footer from './components/Footer/Footer'
 import NavBar from './components/NavBar/NavBar'
 import ContactUs from './pages/ContactUs'
+import HeaderNav from './components/HeaderNav/HeaderNav'
 function App() {
   const navItems = [
     { href: "/", content: "Home" },
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <>
+    <HeaderNav/>
     <NavBar
       logo='/assets/img/Logo.png'
       items={navItems}

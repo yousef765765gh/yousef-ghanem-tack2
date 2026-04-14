@@ -1,4 +1,4 @@
-import "./hero.css"
+import "./Hero.css"
 
 interface FeatureDetail {
   label: string
@@ -16,26 +16,20 @@ interface HeroProps {
 
 const Hero = ({ heroVisual, tagline, heading, headingAccent, subtext, counters }: HeroProps) => {
     return (
-        <section className="main-intro">
-
-        <img src={heroVisual} alt="intro-visual" className="main-intro__media" />
-
-        <div className="main-intro__content">
-
-            <p className="main-intro__tag">{tagline}</p>
-
-            <h1 className="main-intro__heading">
+        <section className="hero">
+        <img src={heroVisual} alt="intro-visual" className="img-hero" />
+        <div className="about-hero">
+            <p className="sub-title-hero">{tagline}</p>
+            <h1 className="title-hero">
             {heading}
-            <span className="main-intro__heading--accent">{headingAccent}</span>
+            <span className="span">{headingAccent}</span>
             </h1>
-
-            <p className="main-intro__subtext">{subtext}</p>
-
-            <div className="main-intro__grid">
+            <p className="des-hero">{subtext}</p>
+            <div className="container-hero">
             {counters.map((item, idx) => (
-                <div key={idx} className="main-intro__card">
-                <h3 className="main-intro__card-title">{item.label}</h3>
-                <p className="main-intro__card-body">{item.text}</p>
+                <div key={idx} className="about-contaner">
+                <h3 className="hero-contaner-title">{item.label}</h3>
+                <p className="hero-contaner-body">{item.text}</p>
                 </div>
             ))}
             </div>
