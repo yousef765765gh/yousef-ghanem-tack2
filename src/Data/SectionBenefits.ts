@@ -1,4 +1,10 @@
-[
+interface CardType {
+  cardImg: string;
+  titleCard: string;
+  cardDes: string;
+}
+
+const cardsData: CardType[] = [
     {    "cardImg": "/assets/img/card1.png",
         "titleCard": "Holistic Learning Approach",
         "cardDes": "Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education."
@@ -25,3 +31,4 @@
     }
     
 ]
+export default cardsData;
