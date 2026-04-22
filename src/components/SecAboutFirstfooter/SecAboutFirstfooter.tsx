@@ -1,5 +1,5 @@
 import './SecAboutFirstfooter.css'
-type ListItem = {
+interface ListItem  {
   title: string
   items: string[]
 }

@@ -1,0 +1,160 @@
+
+.container-history {
+    display: flex;
+    border-radius: 12px;
+    padding: 150px;
+    background-color: #ffffff;
+    border: 2px solid #262626;
+    box-shadow: 6px 6px 0px 2px #1e1e1e;
+    .container-cards {
+        position: relative;
+        width: 100%;
+        .vline {
+            position: absolute;
+            width: 12px;
+            background-color: #1a1a1a;
+            border-left: 5px solid #ffbe99;
+            border-right: 5px solid #ffbe99;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .card-history {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 100px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .contaner-year{
+                display: flex;
+            }
+            .connector-section {
+                display: flex;
+                align-items: center;
+                flex-shrink: 0;
+                position: relative;
+                z-index: 3;
+                margin: 0 -5px 0 0;
+                .node-circle {
+                    width: 20px;
+                    height: 20px;
+                    background-color: #fff;
+                    border: 2px solid #1a1a1a;
+                    border-radius: 50%;
+                    flex-shrink: 0;
+                    position: relative;
+                    z-index: 5;
+                }
+                .sandwich-line-horizontal {
+                    width: 60px;
+                    height: 12px;
+                    flex-shrink: 0;
+                    background-color: #1a1a1a;
+                    border-top: 5px solid #ffbe99;
+                    border-bottom: 5px solid #ffbe99;
+                }
+            }
+            .year-history {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding: 30px 50px;
+                border-radius: 12px;
+                border: 2px solid #262626;
+                box-shadow: 6px 6px 0px 2px #1e1e1e;
+                flex-shrink: 0;
+                .squire-year {
+                    max-width: 60px;
+                }
+                .year {
+                    font-family: Raleway;
+                    font-weight: 700;
+                    font-size: 68px;
+                    color: #1a1a1a;
+                }
+            }
+            .about-history {
+                flex: 1;
+                .title-history {
+                    font-family: Raleway;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 130%;
+                    color: #1a1a1a;
+                    padding-bottom: 20px;
+                }
+
+                .des-history {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: #333333;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 1440px) {
+    .container-history {
+        padding: 100px;
+        .container-cards {
+            .card-history {
+                gap: 40px;
+                margin-bottom: 80px;
+                .year-history {
+                    padding: 24px 34px;
+                    .year {
+                        font-size: 48px;
+                    }
+                }
+                .about-history {
+                    .title-history {
+                        font-size: 24px;
+                        padding-bottom: 16px;
+                    }
+
+                    .des-history {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container-history {
+        padding: 50px 20px;
+        .container-cards {
+            .card-history {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 30px;
+                margin-bottom: 50px;
+                .connector-section {
+                    margin: 0 -5px 0 0;
+                    .sandwich-line-horizontal {
+                        width: 20px;
+                    }
+                }
+                .year-history {
+                    padding: 20px 24px;
+                    .year {
+                        font-size: 38px;
+                    }
+                }
+                .about-history {
+                    margin-left: 50px;
+                    .title-history {
+                        font-size: 22px;
+                        padding-bottom: 12px;
+                    }
+            }
+        }
+    }
+}
+}

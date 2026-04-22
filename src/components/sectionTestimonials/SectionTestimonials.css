@@ -1,80 +1,111 @@
-
- .testimonials-section {
-    padding: 60px 20px;
-    overflow: hidden;
- }
-
-.slider_main_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.testimonials-section {
     width: 100%;
-    margin: 40px auto;
+    .slider_main_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+        .viewport {
+            overflow: hidden;
+            padding: 20px; 
+            .track {
+                display: flex;
+                transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                will-change: transform;
+                .card-slide {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 12px;
+                    background-color: #fff;
+                    border: 2px solid #262626;
+                    box-shadow: 6px 6px 0px 0px #1E1E1E;
+                    padding: 40px ;
+                    text-align: center;
+                    min-width: 0; 
+                    .testimonial-text {
+                    font-size: 20px; 
+                    line-height: 1.6;
+                        }
+                    }
+                }
+        }
+        .nav-btn {
+            border-radius: 8px;
+            padding: 12px;
+            background-color: #FFFFFF;
+            border: 2px solid #333333;
+            cursor: pointer;
+            flex-shrink: 0;
+            transition: 0.3s;
+            &:hover {
+                background-color: #333;
+                color: #fff;
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 1440px) {
+    .testimonials-section {
+    .slider_main_container {
+        .viewport {
+            .track {
+                .card-slide {
+                    .testimonial-text {
+                    font-size: 20px; 
+                    line-height: 1.6;
+                    word-wrap: break-word;
+                        }
+                    }
+                }
+        }
+    }
+}
+}
+@media screen and (max-width: 992px) {
+    .testimonials-section {
+    .slider_main_container {
+                    position: relative;
+
+        display: flex;
+        gap: 40px;
+        .viewport {
+            .track {
+                .card-slide {
+                    .testimonial-text {
+                    font-size: 16px; 
+                        }
+                    }
+                }
+        }
+        .nav-btn {
+            position: absolute;
+            top:100%;
+        }
+        .left  {
+            left: 35%;
+        }
+        .right{
+            right: 35%;
+        }
+
+    }
+}
 }
 
-.slider_main_container .nav-btn {
-    border-radius: 8px;
-    padding: 12px;
-    background-color: #FFFFFF;
-    border: 2px solid #333333;
-    cursor: pointer;
-    z-index: 10;
-    transition: 0.3s;
-    flex-shrink: 0;
-}
-
-.slider_main_container .nav-btn:hover {
-    background-color: #333;
-    color: #fff;
-}
-
-.slider_main_container .viewport {
-    overflow: hidden;
-    margin: 0 20px;
-    padding: 20px 5px; 
-    flex: 1;
-}
-
-.slider_main_container .track {
-    display: flex;
-    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    will-change: transform;
-}
-
-.card-slide {
-    box-sizing: border-box; 
-    border-radius: 12px;
-    background-color: #fff;
-    border: 2px solid #262626;
-    box-shadow: 6px 6px 0px 0px #1E1E1E;
-    text-align: center;
-    padding: 40px 20px; 
-}
-
-.user-img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    object-fit: cover;
-}
-
-.testimonial-text {
-    font-size: 1rem;
-    color: #444;
-    line-height: 1.6;
-    margin-top: 15px;
-}
 
 
-.slider_main_container.is-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
 
-.slider_main_container.is-grid .viewport,
-.slider_main_container.is-grid .track {
-    overflow: visible;
-    display: contents; 
-}
+
+
+
+
+
+
+
+
+
+
+

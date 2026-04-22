@@ -9,9 +9,9 @@ interface CardsProps {
     data: CardType[];
 }
 
-const Cards = ({ data }: CardsProps) => {
+const Cards = ({ data = [] }: CardsProps) => {
     return (
-        <div className="contaner-share">
+        <>
         {data.map((card, index) => (
             <div className="card_share" key={index}>
             <img src={card.cardImg} alt={card.titleCard} />
@@ -21,7 +21,7 @@ const Cards = ({ data }: CardsProps) => {
             </div>
             </div>
         ))}
-        </div>
+        </>
     );
 };
 

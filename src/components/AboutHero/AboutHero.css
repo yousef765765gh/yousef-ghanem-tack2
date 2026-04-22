@@ -1,0 +1,106 @@
+.about_hero{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.first_sub_hero{
+    .sub_title_hero{
+        width: fit-content;
+        padding-bottom: 6px;
+        border-bottom: 2px solid #262626;
+        font-size: 22px;
+        line-height: 150%;
+    }
+    .title_hero{
+        font-family: Raleway;
+        font-size: 54px;
+        line-height: 130%;
+        span{
+            color: #FF8D4D;
+            font-weight: 800;
+        }
+    }
+    .pro_hero{
+        padding-top: 30px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        color:#333333;
+    }
+}
+.contener_hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 12px;
+    padding: 24px 50px;
+    border: 2px solid #262626;
+    background-color: #FFEFE5;
+    box-shadow: 8px 8px 0px 1px #FFBE99;
+    color: #262626;
+    h3{
+        font-weight: 800;
+        font-size: 44px;
+        line-height: 150%;
+    }
+}
+@media screen and (max-width:1440px){
+    .about_hero{
+        gap: 50px;
+    }
+    .first_sub_hero{
+        .sub_title_hero{
+            font-size: 18px;
+        }
+        .title_hero{
+            font-size: 40px;
+        }
+            .pro_hero{
+        padding-top: 20px;
+        font-size: 16px;
+        }
+    }
+    .contener_hero{
+        padding: 20px 40px;
+        box-shadow: 6px 6px 0px 1px #FFBE99;
+        gap: 10px;
+        h3{
+        font-size: 34px;
+        }
+        p{
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (max-width:992px){
+    .about_hero{
+        gap: 40px;
+    }
+    .first_sub_hero{
+        .sub_title_hero{
+            font-size: 16px;
+            text-align: center;
+            margin: auto;
+        }
+        .title_hero{
+            font-size: 30px;
+        }
+        .pro_hero{
+            padding-top: 18px;
+        }
+    }
+    .contener_hero{
+        padding: 40px;
+        flex-direction: column;
+        p{
+            padding-bottom: 20px;
+        }
+    }
+    .contener_hero > div:not(:last-child) {
+        border-bottom: 2px solid #262626;
+        width: 100%;
+    }
+
+}

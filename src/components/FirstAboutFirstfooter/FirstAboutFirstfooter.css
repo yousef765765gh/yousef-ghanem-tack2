@@ -42,10 +42,10 @@
     .first-about-firstfooter{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         text-align: center;
         .logofooter{
         max-width: 200px;
+        margin: 0 auto;
     }
     .contact-information{
         padding-top: 24px;

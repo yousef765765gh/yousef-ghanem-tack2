@@ -12,7 +12,6 @@
 }
 
 .faq-card{
-    /* height: 108px; */
     display: flex;
     flex-direction: column ;
     padding: 40px;

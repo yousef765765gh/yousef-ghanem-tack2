@@ -1,0 +1,32 @@
+.viewport-awards{
+    overflow: hidden;
+    width: 100%;
+    padding: 40px 10px;
+    .track-awards {
+        display: flex;
+        transition: transform 0.4s ease;
+    }
+    .card-slide-awards {
+    display: flex;
+    }
+}
+.more-cards{
+    display: flex;
+    justify-content: space-between;
+    .more-awards{
+        font-weight: 700;
+        font-size: 18px;
+        color: #1A1A1A;
+    }
+    .move-cards{
+        display: flex;
+        gap: 16px;
+        .to-move{
+        border-radius: 6px;
+        padding: 12px;
+        background-color: #FFFFFF;
+        border: 2px solid #333333;
+        }
+    }
+    
+}

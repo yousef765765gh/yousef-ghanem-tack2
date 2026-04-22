@@ -1,107 +1,30 @@
-.hero {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    gap: 50px;
-    .img-hero{
-        max-width: 700px;
-    }
-    .sub-title-hero {
-    display: inline;
-    font-weight: 500;
-    font-size: 22px;
-    border-bottom: 2px solid #262626;
-    padding-bottom: 6px;
-    }
-
-    .title-hero {
-    font-family: Raleway;
-    font-weight: 800;
-    font-size: 54px;
-    line-height: 130%;
-    padding-bottom: 20px;
-    .span {
-    color: #FF8D4D;
-    }
-    }
-    .des-hero {
-    font-size: 20px;
-    line-height: 150%;
-    padding-bottom: 50px;
-    color: #4C4C4C;
-    }
-    .container-hero {
+.hero{
+    padding: 80px 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 3px solid #262626;
-    border-radius: 12px;
-    padding: 24px 50px;
-    box-shadow: 6px 6px 0px 1px #FFBE99;
-    background-color: #ffefe5;
-    .hero-contaner-title {
-    font-weight: 800;
-    font-size: 44px;
-    color: #262626;
-    }
-    .hero-contaner-body {
-    font-weight: 500;
-    font-size: 18px;
-    color: #262626;
-    }
-    }
-    .about-contaner:not(:last-child) {
-    border-right: 1px solid #262626;
-    margin-right: 20px;
-    padding-right: 20px;
+    gap: 65px;
+    img{
+        max-width: 765px;
     }
 }
-
-@media screen and (max-width: 1440px) {
-    .hero {
-    gap: 40px;
-    .sub-title-hero {
-    font-size: 18px;
-    }
-    .title-hero {
-    font-size: 40px;
-    }
-    .des-hero {
-    font-size: 16px;
-    }
-    .container-hero {
-    padding: 20px 40px;
-    .hero-contaner-title {
-    font-size: 34px;
-    }
-    .hero-contaner-body {
-    font-size: 16px;
-    }
+@media screen and (max-width:1440px){
+    .hero{
+        padding: 60px 80px;
+        gap: 50px;
+        img{
+        max-width: 615px;
+        }
     }
 }
-}
-
-@media screen and (max-width: 992px) {
-    .hero {
+@media screen and (max-width:992px){
+    .hero{
         flex-direction: column;
-        text-align: center;
         gap: 40px;
-        .img-hero{
-            max-width: 345px;
-        }
-        .title-hero {
-            padding-top: 12px;
-        font-size: 30px;
-        }
-        .container-hero {
-            flex-direction: column;
-            padding: 40px;
-            .about-contaner:not(:last-child) {
-                border-right: none ;
-                border-bottom: 1px solid #262626;
-                margin-bottom: 20px;
-                padding-bottom: 20px;
-                }
+        padding: 50px 16px;
+        text-align: center;
+        img{
+            max-width: 356px;
         }
     }
 }

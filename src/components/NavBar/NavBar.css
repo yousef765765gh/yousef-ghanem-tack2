@@ -1,7 +1,6 @@
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
     border-radius: 12px;
     background-color: #FFFFFF;
     border: 2px solid #262626;
@@ -16,20 +15,20 @@ nav {
         display: flex;
         ul {
             display: flex; 
-            align-items: stretch; 
             border-left: 2px solid #262626;
             li{
-                display: flex;
-                align-items: center;
+
                 list-style: none;
-                border-right: 2px solid #262626;
                 a{
                     height: 100%;
+                    display: flex;
+                    align-items: center;
                     text-decoration: none;
+                    padding: 20px 34px;
+                    border-right: 2px solid #262626;
+                    color: #262626;
                     font-weight: 500;
                     font-size: 20px;
-                    color:#262626;
-                    padding: 20px 34px;
                     &.active{
                         background-color: #FFEFE5;
                     }
@@ -77,7 +76,10 @@ nav {
     nav {
         position: relative;
         margin: 14px 16px;
-
+        .navbar-logo-img{
+            padding: 16px 20px;
+            max-width: 160px;
+            }
         .navbar-actions {
 
             ul {

@@ -1,5 +1,7 @@
 import HeaderPages from "../components/HeaderPages/HeaderPages"
+import SectionOurRooms from "../components/SectionOurRooms/SectionOurRooms"
 import SectionSpecial from "../components/SectionSpecial/SectionSpecial"
+import SectionWhatStudenta from "../components/SectionWhatStudenta/SectionWhatStudenta"
 
 const Academics = () => {
   return (
@@ -11,6 +13,8 @@ const Academics = () => {
         desHeader="Welcome to our Academics page, where we take pride in providing a comprehensive and stimulating educational experience for your child. Our kindergarten school's academic program is thoughtfully designed to foster a love for learning while building a strong foundation of essential skills and knowledge. From language arts and mathematics to science and social studies, our curriculum is carefully crafted to spark curiosity and encourage active exploration."
       />
       <SectionSpecial/>
+      <SectionWhatStudenta/>
+      <SectionOurRooms/>
     </>
   )
 }
